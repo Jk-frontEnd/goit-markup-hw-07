@@ -1,0 +1,128 @@
+@import '../utils/variables.scss';
+
+.header-section {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid map-get($map: variables, $key: color-port-border);
+
+    nav {
+            display: flex;
+            align-items: center;
+        }
+}
+
+.page-header {
+    border-bottom: 1px solid  map-get($map: variables, $key: color-additional);
+
+    &__contacts {
+            display: flex;
+            justify-content: flex-end;
+            gap: 30px;
+            margin-left: auto;
+            margin-bottom: 0;
+            margin-top: 0;
+            padding-left: 0;
+            list-style: none;
+        }
+
+    &__nav,
+    &__contacts {
+        list-style: none;
+    }
+
+    &__link {
+        display: block;
+        color:  map-get($map: variables, $key: color-main);
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        text-decoration: none;
+        cursor: pointer;
+        margin-right: 0;
+        margin-left: 0;
+        padding-top: 32px;
+        padding-bottom: 32px;
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+        &:hover, &focus {
+            color:  map-get($map: variables, $key: color-web);
+            fill:  map-get($map: variables, $key: color-web);
+        }
+    }
+
+    &__mail {
+        fill:  map-get($map: variables, $key: color-icon);
+        margin-right: 10px;
+        display: flex;
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__phone {
+        fill:  map-get($map: variables, $key: color-icon);
+        margin-left: 12px;
+        margin-right: 10px;
+        display: flex;
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &__contact {
+        display: flex;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.14;
+        color:  map-get($map: variables, $key: color-desc);
+        text-decoration: none;
+        cursor: pointer;
+        align-items: center;
+        transition-property: color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    
+        &:hover, &focus {
+                color:  map-get($map: variables, $key: color-web);
+                fill:  map-get($map: variables, $key: color-web);
+            }
+
+        &:hover svg,
+        &focus svg {
+            color:  map-get($map: variables, $key: color-web);
+            fill:  map-get($map: variables, $key: color-web);
+        }
+
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: flex-end;
+        gap: 50px;
+        margin: 0;
+        padding-left: 0;
+        list-style: none;
+    }
+}
+
+.current {
+    position: relative;
+    display: block;
+    color:  map-get($map: variables, $key: color-web);
+
+    &::after {
+            content: ' ';
+            position: absolute;
+            width: 48px;
+            background-color:  map-get($map: variables, $key: color-web);
+            height: 4px;
+            top: 76px;
+            bottom: 0;
+            left: 0;
+            border-radius: 2px;
+            height: 4px;
+        }
+}

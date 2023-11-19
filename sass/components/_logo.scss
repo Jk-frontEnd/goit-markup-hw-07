@@ -1,0 +1,26 @@
+@import '../utils/variables.scss';
+
+.logo {
+    border-radius: 4px;
+    margin-right: 94px;
+    text-decoration: none;
+
+    &__web {
+        font-family: ' map-get($map: variables, $key: font-logo)';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.19;
+        color: $web-color;
+    }
+
+    &__studio {
+        font-family: ' map-get($map: variables, $key: font-logo)';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.19;
+        color: $studio-color;
+        cursor: pointer;
+    }
+}
