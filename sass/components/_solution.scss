@@ -1,5 +1,4 @@
-@import '../utils/variables.scss';
-
+ 
 .solution-section {
     color:  map-get($map: variables, $key: color-additional);
     background-image: linear-gradient(rgba(47, 48, 58, .4), rgba(47, 48, 58, .4)), url(../home/solution-bg.jpg);
