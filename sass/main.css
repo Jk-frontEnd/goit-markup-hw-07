@@ -822,8 +822,9 @@ input {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.overlay-box__link:hover .overlay-box__card {
-  transform: translatey(0);
+
+.project-section__link:hover .overlay-box__card {
+  transform: translateY(0);
 }
 
 footer {
