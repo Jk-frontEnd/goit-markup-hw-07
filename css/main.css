@@ -50,8 +50,16 @@ body {
   padding-right: 16px;
 }
 
+h1,
+h2,
 h3 {
-  margin-top: 0;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  margin: 0;
+  padding: 0;
 }
 
 ul {
@@ -503,7 +511,8 @@ input {
 }
 
 .positive-section {
-  padding-top: 94px;
+  margin-top: 94px;
+  margin-bottom: 94px;
   padding-bottom: 94px;
 }
 .positive-section__list {
@@ -556,7 +565,8 @@ input {
   color: var(--color-main);
   display: flex;
   justify-content: center;
-  margin-top: 0;
+  margin: 0;
+  padding: 0;
   margin-bottom: 50px;
 }
 .work-section__list {
@@ -787,6 +797,8 @@ input {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
+  margin: 0;
+  padding: 0;
 }
 .project__type {
   font-style: normal;
@@ -794,6 +806,8 @@ input {
   font-size: 16px;
   line-height: 1.9;
   color: var(--color-desc);
+  margin: 0;
+  padding: 0;
 }
 
 .overlay-box {
