@@ -12,6 +12,7 @@ footer {
 }
 
 .main-ftr {
+
     &__address {
         margin-left: 40px;
         text-decoration: none;
@@ -25,6 +26,7 @@ footer {
         margin-left: 0;
         margin-top: 0;
     }
+
     &__email,
     &__number {
         margin-left: 40px;
@@ -41,15 +43,15 @@ footer {
         transition-property: color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    &__email:hover,
-    &__email:focus,
-    &__number:hover,
-    &__number:focus {
-        color: var(--color-additional);
-    }
 
-
+        &:hover,
+        &:focus,
+        &:hover,
+        &:focus {
+            color: var(--color-additional);
+        }
+    }
+    
     &__list {
         list-style: none;
     }
@@ -74,7 +76,7 @@ footer {
 
     &__title {
         color: var(--color-additional);
-        font-family: Roboto;
+        font-family: var(--font-family-main);
         font-size: 14px;
         font-style: normal;
         font-weight: 700;
@@ -114,14 +116,15 @@ footer {
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:active,
+        &:focus {
+            background-color: var(--color-active);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        }
     }
 
-    &__submit-btn:hover,
-    &__submit-btn:active,
-    &__submit-btn:focus {
-        background-color: var(--color-active);
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    }
 }
 
 .logo-footer {
@@ -133,7 +136,7 @@ footer {
     display: block;
 
     &__web {
-            font-family: 'Raleway', sans-serif;
+            font-family: var(--font-family-logo);
             font-style: normal;
             font-weight: 700;
             font-size: 26px;
@@ -142,7 +145,7 @@ footer {
         }
     
         &__studio {
-            font-family: 'Raleway', sans-serif;
+            font-family: var(--font-family-logo);
             font-style: normal;
             font-weight: 700;
             font-size: 26px;

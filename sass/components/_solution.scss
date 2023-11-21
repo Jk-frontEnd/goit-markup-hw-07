@@ -2,7 +2,7 @@
     color: var(--color-additional);
     background-image: linear-gradient(rgba(47, 48, 58, 0.40),
             rgba(47, 48, 58, 0.40)),
-        url(.../images\home\solution-bg.jpg);
+        url(../images/home/solution-bg.jpg);
     background-color: var(--color-add-background);
     padding-top: 200px;
     padding-bottom: 200px;
@@ -41,10 +41,10 @@
         transition-property: background-color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
 
-    &__btn:active,
-    &__btn:hover {
-        background-color: var(--color-active);
+            &:active,
+            &:hover {
+                background-color: var(--color-active);
+            }
     }
 }

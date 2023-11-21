@@ -34,13 +34,13 @@
         transition-property: fill;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    
+
+            &:hover,
+            &:focus {
+                fill: var(--color-web);
+            }
     }
 
-    &__close-btn:hover,
-    &__close-btn:focus {
-        fill: var(--color-web);
-    }
 
     &__title {
         color: var(--color-main);
@@ -63,6 +63,14 @@
         transition-property: border;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+            &:hover,
+            &:focus,
+            &:active {
+                border-radius: 4px;
+                border: 1px solid var(--color-web);
+                cursor: pointer;
+            }
     }
 
     &__comment {
@@ -81,6 +89,14 @@
         transition-property: border;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+            &:hover,
+            &:focus,
+            &:active {
+                border-radius: 4px;
+                border: 1px solid var(--color-web);
+                cursor: pointer;
+            }
     }
 
     &__name {
@@ -116,13 +132,13 @@
         transition-property: background-color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    }
 
-    &__submit-btn:hover,
-    &__submit-btn:active,
-    &__submit-btn:focus {
-        background-color: var(--color-active);
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            &:hover,
+            &:active,
+            &:focus {
+                background-color: var(--color-active);
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            }
     }
 
     &__checkbox-label {
@@ -169,7 +185,7 @@
     }
 
     &__agree {
-        font-family: Roboto;
+        font-family: var(--font-family-main);
         font-size: 14px;
         font-style: normal;
         font-weight: 400;
@@ -178,7 +194,7 @@
 
     &__policy-link {
         color: var(--color-web);
-        font-family: Roboto;
+        font-family: var(--font-family-main);
         font-size: 14px;
         font-style: normal;
         font-weight: 400;
@@ -191,37 +207,26 @@
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-        &__label>&__img {
-            fill: var(--color-main);
-            position: relative;
-            top: -30px;
-            left: 12px;
-            bottom: 0;
-    
-            display: flex;
-    
-    
-            transition-property: fill;
-            transition-duration: 250ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        }
+    &__label>&__img {
+        fill: var(--color-main);
+        position: relative;
+        top: -30px;
+        left: 12px;
+        bottom: 0;
 
-        &__label:hover svg,
-        &__label:focus svg,
-        &__label:active svg {
+        display: flex;
+
+
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover svg,
+        &:focus svg,
+        &:active svg {
             fill: var(--color-web);
         }
-
-        &__input:hover,
-        &__input:focus,
-        &__input:active,
-        &__comment:hover,
-        &__comment:focus,
-        &__comment:active {
-            border-radius: 4px;
-            border: 1px solid var(--color-web);
-            cursor: pointer;
-        }
+    }
 }
 
 .modal__checkbox-label:focus+.input .modal-img {
@@ -300,7 +305,7 @@ input {
 .comment {
     &::placeholder {
             color: rgba(117, 117, 117, 0.50);
-            font-family: Roboto;
+            font-family: var(--font-family-main);
             font-size: 12px;
             font-style: normal;
             font-weight: 400;

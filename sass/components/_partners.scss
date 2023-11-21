@@ -27,13 +27,6 @@
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    &__list-link:hover,
-    &__list-link:focus,
-    &__list-link:hover svg,
-    &__list-link:focus svg {
-        fill: var(--color-web);
-        border-color: var(--color-web);
-    }
 
     &__list-link {
         width: 170px;
@@ -47,5 +40,13 @@
         transition-property: border-color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+            &:hover,
+            &:focus,
+            &:hover svg,
+            &:focus svg {
+                fill: var(--color-web);
+                border-color: var(--color-web);
+            }
     }
 }

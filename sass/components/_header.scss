@@ -44,6 +44,12 @@ nav {
         transition-property: color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+            &:hover,
+            &:focus {
+                color: var(--color-web);
+                fill: var(--color-web);
+            }
     }
 
     &__mail {
@@ -80,6 +86,13 @@ nav {
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
             
+            &:hover,
+            &:hover svg,
+            &:focus,
+            &:focus svg {
+                color: var(--color-web);
+                fill: var(--color-web);
+            }
     }
 
     &__nav {
@@ -89,18 +102,6 @@ nav {
         margin: 0;
         padding-left: 0;
         list-style: none;
-    }
-
-        
-
-    &__contact:hover,
-    &__contact:hover svg,
-    &__contact:focus,
-    &__contact:focus svg,
-    &__link:hover,
-    &__link:focus {
-        color: var(--color-web);
-        fill: var(--color-web);
     }
 }
 
@@ -128,7 +129,7 @@ nav {
     text-decoration: none;
 
     &__web {
-            font-family: 'Raleway', sans-serif;
+            font-family: var(--font-family-logo);
             font-style: normal;
             font-weight: 700;
             font-size: 26px;
@@ -137,7 +138,7 @@ nav {
         }
 
     &__studio {
-        font-family: 'Raleway', sans-serif;
+        font-family: var(--font-family-logo);
         font-style: normal;
         font-weight: 700;
         font-size: 26px;

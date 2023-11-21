@@ -79,6 +79,17 @@
         transition-property: background-color;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover,
+        &:focus {
+            background-color: var(--color-web);
+        }
+    
+        &:hover svg,
+        &:focus svg {
+            fill: var(--color-additional);
+    
+        }
     }
     
     &__socials-link-icon {
@@ -90,15 +101,5 @@
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 
-    &__socials-link:hover,
-    &__socials-link:focus {
-        background-color: var(--color-web);
-
-    }
-
-    &__socials-link:hover svg,
-    &__socials-link:focus svg {
-        fill: var(--color-additional);
-
-    }
+    
 }
