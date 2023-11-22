@@ -672,7 +672,7 @@ input {
 }
 
 .positive-section {
-  padding-bottom: 94px;
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 .positive-section__list {
@@ -686,7 +686,6 @@ input {
   gap: 30px;
 }
 .positive-section__list-item {
-  height: 92px;
   width: 270px;
   display: -webkit-box;
   display: -ms-flexbox;
